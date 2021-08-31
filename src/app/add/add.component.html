@@ -1,0 +1,40 @@
+<div style="width: 420px;">
+
+    <div class="card">
+        <div style="background-color: #64c8cc; color: white;">
+            <h4 style="padding: 10px;" class="card-title">Add User</h4>
+        </div>
+
+        <div class="card-body">
+            <form [formGroup]="addForm">
+                
+                <div class="example-container">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Full Name</mat-label>
+                        <input matInput name="full_name" formControlName="full_name" placeholder="Full Name"
+                            type="text">
+                        <mat-error *ngIf="hasError('full_name', 'required')">Full Name is required
+                        </mat-error>
+                    </mat-form-field>
+                  
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput name="email" formControlName="email" placeholder="Email Address"
+                            type="text">
+                        <mat-error *ngIf="hasError('email', 'required')">Email Address is required
+                        </mat-error>
+                    </mat-form-field>
+                  </div>
+                <div class="row" style="align-content: center;">
+
+                    <button type="submit"  mat-button  [disabled]="!addForm.valid" style="margin-right: 10px; background-color: #64c8cc;color: white;"
+                        (click)="onSubmit()">
+                        Save
+                    </button>
+
+                    <button style="background-color: red;color: white;" mat-button [mat-dialog-close]="true">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

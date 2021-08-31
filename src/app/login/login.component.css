@@ -1,0 +1,51 @@
+.login-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  background-color: rgb(230, 224, 224);
+  font-family: "Calibri";
+}
+.mat-toolbar {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-family: "Calibri";
+}
+form {
+  font-family: "Calibri";
+  width: 100%;
+}
+.login-content {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Calibri";
+}
+
+.login-title {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Calibri";
+}
+
+.login-toolbar {
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+  background-color: #64c8cc;
+}
+.mat-form-field {
+  width: 100%;
+  font-family: "Calibri";
+  line-height: initial;
+}
+.mat-raised-button {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #64c8cc;
+}
+
+
+
+
+

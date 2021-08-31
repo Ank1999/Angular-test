@@ -1,0 +1,25 @@
+
+
+<div class="login-container">
+    <div class="login-content">
+        <mat-card>
+            <mat-toolbar class="login-toolbar">Login</mat-toolbar>
+            <form [formGroup]="loginForm">
+                <mat-form-field appearance="outline">
+                    <mat-icon matPrefix>person_outline</mat-icon>
+                    <input autofocus type="tel" matInput placeholder="Username" formControlName="username" />
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-icon matPrefix>lock_outline</mat-icon>
+                    <input type="password" autocomplete="false" matInput placeholder="Password"
+                        formControlName="password" />
+                </mat-form-field>
+
+                <button type="submit" mat-raised-button color="primary" style="font-family: Calibri; font-size: 16px;"
+                    (click)="login()">Login</button>
+            </form>
+
+        </mat-card>
+    </div>
+</div>
